@@ -2,24 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Look : MonoBehaviour
+public class PlayerLook : MonoBehaviour
 {
     float xRot;
     float yRot;
     float xRotCurrent;
     float yRotCurrent;
-    public Camera player;
+    public Camera cam;
     public GameObject playerGameObject;
     public float sensivity = 5f;
     public float smoothTime = 0.1f;
     float currentVelosityX;
     float currentVelosityY;
 
-    void Update()
-    {
-        MouseMove();
-    }
-    void MouseMove()
+    public void ProcessLook(Vector2 input)
     {
         xRot += Input.GetAxis("Mouse X") * sensivity;
         yRot += Input.GetAxis("Mouse Y") * sensivity;
@@ -27,7 +23,12 @@ public class Player_Look : MonoBehaviour
 
         xRotCurrent = Mathf.SmoothDamp(xRotCurrent, xRot, ref currentVelosityX, smoothTime);
         yRotCurrent = Mathf.SmoothDamp(yRotCurrent, yRot, ref currentVelosityY, smoothTime);
-        player.transform.rotation = Quaternion.Euler(-yRotCurrent, xRotCurrent, 0f);
+        cam.transform.rotation = Quaternion.Euler(-yRotCurrent, xRotCurrent, 0f);
         playerGameObject.transform.rotation = Quaternion.Euler(0f, xRotCurrent, 0f);
     }
+
 }
+
+
+
+   

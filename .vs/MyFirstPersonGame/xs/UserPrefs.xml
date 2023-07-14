@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{14FE94BC-DF35-99E9-2366-CB382487006B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
-    <Files>
-      <File FileName="Assets/Scripts/InputManager.cs" Line="15" Column="6" />
-      <File FileName="Assets/Scripts/PlayerLook.cs" Line="5" Column="45" />
-      <File FileName="Assets/Scripts/PlayerMotor.cs" Line="51" Column="27" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyFirstPersonGame" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerMotor.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
         </State>
       </Pad>
     </Pads>

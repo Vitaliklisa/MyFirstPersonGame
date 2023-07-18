@@ -8,7 +8,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.310DEAF1" = "package m"
+	"last_search.310DEAF1" = "package"
 	"OpenInspectorPreview.310DEAF1" = "0"
 	"currentGroup.310DEAF1" = "all"
 }
@@ -20,7 +20,7 @@ providers = {
 	}
 	asset = {
 		active = true
-		priority = 50
+		priority = 25
 		defaultAction = null
 	}
 	log = {
@@ -45,7 +45,7 @@ providers = {
 	}
 	scene = {
 		active = true
-		priority = 80
+		priority = 50
 		defaultAction = null
 	}
 	packages = {
@@ -56,26 +56,6 @@ providers = {
 	store = {
 		active = true
 		priority = 100
-		defaultAction = null
-	}
-	menu = {
-		active = true
-		priority = 25
-		defaultAction = null
-	}
-	settings = {
-		active = true
-		priority = 100
-		defaultAction = null
-	}
-	calculator = {
-		active = true
-		priority = 10
-		defaultAction = null
-	}
-	static_methods = {
-		active = true
-		priority = 85
 		defaultAction = null
 	}
 }

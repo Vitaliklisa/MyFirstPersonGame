@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PlayerLook : MonoBehaviour
 {
     float xRot;
@@ -22,6 +23,7 @@ public class PlayerLook : MonoBehaviour
     }
     public void ProcessLook(Vector2 input)
     {
+        Cursor.lockState = CursorLockMode.Locked;
         xRot += Input.GetAxis("Mouse X") * sensivity;
         yRot += Input.GetAxis("Mouse Y") * sensivity;
         yRot = Mathf.Clamp(yRot, -89f, 89f);

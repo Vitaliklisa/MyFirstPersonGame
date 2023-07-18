@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 2705597947448028763}
   - component: {fileID: 615555465033836705}
   - component: {fileID: 8165559752752158712}
-  - component: {fileID: 8078425231779585784}
-  - component: {fileID: 3016142971369694157}
-  - component: {fileID: 8241957796263682520}
+  - component: {fileID: 7896965756429880542}
+  - component: {fileID: 5221509174464071143}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -36,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 5991469210844215827}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2705597947448028763
 MeshFilter:
@@ -114,7 +113,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8078425231779585784
+--- !u!114 &7896965756429880542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,17 +122,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 334230822215320066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5528eca66ee9c410190c5ac01f2516bc, type: 3}
+  m_Script: {fileID: 11500000, guid: b049a09e76bf44e9391f03249ceec1a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpCrouch: 0
-  speed: 5
-  initialHeight: 2
-  crouchHeight: 1
-  crouchTimer: 1
-  gravity: -9.8
-  jumpHeight: 3
---- !u!114 &3016142971369694157
+  mouseSensitivity: 3
+  movementSpeed: 5
+  jumpSpeed: 5
+  mass: 1
+  acceleration: 20
+  cameraTransform: {fileID: 5991469210844215827}
+--- !u!114 &5221509174464071143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,24 +140,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 334230822215320066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f90247f8699e3463480f2aa7ff109607, type: 3}
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8241957796263682520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334230822215320066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f25c38961dab742268834c1b79920edd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 769088675178007469}
-  xSensitivity: 30
-  ySensitivity: 30
+  m_Actions: {fileID: -944628639613478452, guid: 06e1e4d823fd44789b768420516b25cc, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &8557517415304244296
 GameObject:
   m_ObjectHideFlags: 0

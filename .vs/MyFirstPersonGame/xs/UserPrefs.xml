@@ -2,27 +2,32 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CollectibleCount.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="157fd1df-8456-4308-a0b0-4a784a6eb195" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController/Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerLook.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Collectible.cs" Line="23" Column="2" />
-      <File FileName="Assets/CollectibleCount.cs" Line="13" Column="35" />
+      <File FileName="Assets/Scripts/PlayerController/Player.cs" Line="24" Column="22" />
+      <File FileName="Assets/Scripts/PlayerController/PlayerJumping.cs" Line="44" Column="89" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MyFirstPersonGame">
+          <Node name="MyFirstPersonGame" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerController" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="32bac6ca-358b-4d87-b122-be719d558a57" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

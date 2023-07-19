@@ -3,19 +3,17 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="157fd1df-8456-4308-a0b0-4a784a6eb195" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController/PlayerSprinting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController/PlayerJumping.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController/Player.cs" Line="19" Column="14" />
-      <File FileName="Assets/Scripts/PlayerController/PlayerSprinting.cs" Line="30" Column="53" />
+      <File FileName="Assets/Scripts/PlayerController/PlayerJumping.cs" Line="44" Column="89" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MyFirstPersonGame" expanded="True">
+          <Node name="MyFirstPersonGame">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="PlayerController" expanded="True" selected="True" />
-              </Node>
+              <Node name="Scenes" expanded="True" />
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>

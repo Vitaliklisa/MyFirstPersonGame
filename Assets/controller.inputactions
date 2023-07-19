@@ -53,7 +53,7 @@
                 {
                     "name": "Sprint",
                     "type": "Button",
-                    "id": "10f401bc-aeaf-4f4f-a780-e53432193d46",
+                    "id": "24af46a8-99c7-4727-bdb7-dac5ddd5a1a3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -199,7 +199,7 @@
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": ";Gamepad",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -305,7 +305,7 @@
                 },
                 {
                     "name": "",
-                    "id": "e30dcbd6-9b06-47e5-9b2c-8e7a33239e20",
+                    "id": "01307c92-dcb9-497c-8b26-450824b75113",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",

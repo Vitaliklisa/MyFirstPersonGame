@@ -42,18 +42,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Crouch",
+                    "name": "Sprint",
                     "type": "Button",
-                    "id": "f432577e-7f8a-46e7-b076-4bae65a1e161",
+                    "id": "24af46a8-99c7-4727-bdb7-dac5ddd5a1a3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Sprint",
+                    "name": "Crouch",
                     "type": "Button",
-                    "id": "24af46a8-99c7-4727-bdb7-dac5ddd5a1a3",
+                    "id": "f432577e-7f8a-46e7-b076-4bae65a1e161",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -294,23 +294,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f6283d5c-51dc-4737-99d8-4c8c42a47254",
-                    "path": "<Keyboard>/leftCtrl",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "01307c92-dcb9-497c-8b26-450824b75113",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6283d5c-51dc-4737-99d8-4c8c42a47254",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

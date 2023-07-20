@@ -1,25 +1,30 @@
 ﻿<Properties StartupConfiguration="{14FE94BC-DF35-99E9-2366-CB382487006B}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="157fd1df-8456-4308-a0b0-4a784a6eb195" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController/PlayerCrouching.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController/PlayerCrouching.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController/Player.cs" Line="11" Column="11" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MyFirstPersonGame" selected="True">
-            <Node name="Assets" expanded="True" />
+          <Node name="MyFirstPersonGame">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerController" expanded="True">
+                  <Node name="PlayerCrouching.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="74d45d1b-c8ad-4a2b-aabb-2597f886ae57" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

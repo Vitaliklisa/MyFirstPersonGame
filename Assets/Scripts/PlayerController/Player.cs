@@ -8,9 +8,15 @@ public class Player : MonoBehaviour
     [SerializeField] float movementSpeed = 5f;
     [SerializeField] float mass = 1f;
     [SerializeField] float acceleration = 20f;
-    [SerializeField] Transform cameraTransform;
+    public Transform cameraTransform;
 
     public bool IsGrounded => controller.isGrounded;
+
+    public float Height
+    {
+        get => controller.height;
+        set => controller.height = value;
+    }
 
     public event Action OnBeforeMove;
     public event Action<bool> OnGroundStateChange;

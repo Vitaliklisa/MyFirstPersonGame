@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     [SerializeField] float movementSpeed = 5f;
     [SerializeField] float mass = 1f;
     [SerializeField] float acceleration = 20f;
+
+    [SerializeField] float worldBottomBoundary = -100f;
+
     public Transform cameraTransform;
 
     public bool IsGrounded => controller.isGrounded;
@@ -26,6 +29,8 @@ public class Player : MonoBehaviour
     CharacterController controller;
     internal Vector3 velocity;
     Vector2 look;
+
+    (Vector3, Quaternion) initialPositionAndRotation;
 
     bool wasGrounded;
 
@@ -46,6 +51,16 @@ public class Player : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        initialPositionAndRotation = (transform.position, transform.rotation);
+    }
+
+    public void Teleport(Vector3 position, Quaternion rotation)
+    {
+        transform.position = position;
+        Physics.SyncTransforms();
+        look.x = rotation.eulerAngles.y;
+        look.y = rotation.eulerAngles.z;
+        velocity = Vector3.zero;
     }
 
     void Update()
@@ -54,8 +69,17 @@ public class Player : MonoBehaviour
         UpdateGravity();
         UpdateMovement();
         UpdateLook();
+        CheckBounds();
     }
 
+    void CheckBounds()
+    {
+        if (transform.position.y < worldBottomBoundary)
+        {
+            var (position, rotation) = initialPositionAndRotation;
+            Teleport(position, rotation);
+        }
+    }
     void UpdateGround()
     {
         if (wasGrounded != IsGrounded)

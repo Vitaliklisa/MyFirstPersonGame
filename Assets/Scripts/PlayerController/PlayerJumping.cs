@@ -5,7 +5,7 @@ public class PlayerJumping : MonoBehaviour
 {
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float jumpPressBufferTime = .05f;
-    [SerializeField] float jumpGroundGraceTime = .2f;
+    [SerializeField] float jumpGroundGraceTime = .10f;
 
    Player player;
 

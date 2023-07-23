@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float mouseSensitivity = 3f;
     [SerializeField] float movementSpeed = 5f;
+    [SerializeField] float climbingSpeed = 2f;
     [SerializeField] float mass = 1f;
     [SerializeField] float acceleration = 20f;
 
@@ -37,8 +38,6 @@ public class Player : MonoBehaviour
     PlayerInput playerInput;
     InputAction MoveAction;
     InputAction lookAction;
-    InputAction jumpAction;
-    
 
     void Awake()
     {

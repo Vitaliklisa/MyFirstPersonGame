@@ -1,16 +1,6 @@
 ﻿<Properties StartupConfiguration="{14FE94BC-DF35-99E9-2366-CB382487006B}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController/Player.cs">
-    <Files>
-      <File FileName="Assets/Scripts/PlayerController/PlayerJumping.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/PlayerController/PlayerCrouching.cs" Line="8" Column="53" />
-      <File FileName="Assets/Scripts/PlayerController/Player.cs" Line="40" Column="28" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -18,6 +8,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="PlayerController" expanded="True" />
+                <Node name="Collectible.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,5 +16,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="90be9fa8-6216-42ac-8775-2fd277131a7f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4610509-fda1-460a-99d3-e1c9a515c6df" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

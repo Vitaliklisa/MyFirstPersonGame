@@ -28,12 +28,23 @@ public class Player : MonoBehaviour
 
     internal float movementSpeedMultiplier;
 
-    public State state;
+    State _state;
+
+    public State CurrentState
+    {
+        get => _state;
+        set
+        {
+            _state = value;
+            velocity = Vector3.zero;
+        }
+    }
 
     public enum State
     {
         Walking,
-        Flying
+        Flying,
+        Climbing
     }
 
     CharacterController controller;
@@ -75,7 +86,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         movementSpeedMultiplier = 1f;
-        switch (state)
+        switch (CurrentState)
         {
             case State.Walking:
                 UpdateGround();
@@ -86,6 +97,10 @@ public class Player : MonoBehaviour
                 break;
             case State.Flying:
                 UpdateMovementFlying();
+                UpdateLook();
+                break;
+            case State.Climbing:
+                UpdateMovementClimbing();
                 UpdateLook();
                 break;
         }
@@ -153,6 +168,40 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
+    void UpdateMovementClimbing ()
+    {
+        var input = GetMovementInput(climbingSpeed, false);
+        var forwardInputFactor = Vector3.Dot(transform.forward, input.normalized);
+
+        if (forwardInputFactor > 0 )
+        {
+            input.x = input.x * .5f;
+            input.z = input.z * .5f;
+
+            if (Mathf.Abs(input.y) > .2f)
+            {
+                input.y = Mathf.Sign(input.y) * climbingSpeed;
+                Debug.DrawLine(transform.position, transform.position + input, Color.red, 3f);
+            }
+            else
+            {
+                Debug.DrawLine(transform.position, transform.position + input, Color.yellow, 3f);
+            }
+        }
+        else
+        {
+            input.y = 0;
+            input.x = input.x * .3f;
+            input.z = input.z * .3f;
+            Debug.DrawLine(transform.position, transform.position + input, Color.green, 3f);
+        }
+        
+        var factor = acceleration * Time.deltaTime;
+        velocity = Vector3.Lerp(velocity, input, factor);
+
+        controller.Move(velocity * Time.deltaTime);
+    }
+
     void UpdateLook()
     { 
         var lookInput = lookAction.ReadValue<Vector2>();
@@ -167,6 +216,6 @@ public class Player : MonoBehaviour
 
     void OnToggleFlying()
     {
-        state = state == State.Flying ? State.Walking : State.Flying;
+        CurrentState = CurrentState == State.Flying ? State.Walking : State.Flying;
     }
 }

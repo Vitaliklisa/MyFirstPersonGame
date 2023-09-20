@@ -1,14 +1,22 @@
 ﻿<Properties StartupConfiguration="{14FE94BC-DF35-99E9-2366-CB382487006B}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a1d14136-cefc-4da3-8933-42f1911d596e" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ladder.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController/Player.cs" Line="128" Column="23" />
+      <File FileName="Assets/Scripts/Ladder.cs" Line="16" Column="27" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MyFirstPersonGame">
+          <Node name="MyFirstPersonGame" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="PlayerController" expanded="True" />
-                <Node name="Collectible.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -16,10 +24,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4610509-fda1-460a-99d3-e1c9a515c6df" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
